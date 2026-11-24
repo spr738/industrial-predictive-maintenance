@@ -72,12 +72,12 @@ function App() {
   return (
     <main className="shell">
       <header className="topbar">
-        <div className="brand"><div className="brand-mark">F</div><div><strong>FORGEWATCH</strong><span>INDUSTRIAL INTELLIGENCE</span></div></div>
-        <div className="top-meta"><span className="live-dot"></span> DEMO SYSTEM ONLINE <span className="divider">|</span> Silchar Plant <span className="avatar">SR</span></div>
+        <div className="brand"><div className="brand-mark">FW</div><div><strong>FORGEWATCH</strong><span>PLANT SYSTEMS / 01</span></div></div>
+        <div className="top-meta"><span className="live-dot"></span> DEMO SYSTEM ONLINE <span className="divider">|</span> NORTH-EAST / DEMO PLANT <span className="avatar">SR</span></div>
       </header>
 
       <section className="welcome">
-        <div><div className="eyebrow">OPERATIONS / OVERVIEW</div><h1>Predictive Maintenance</h1><p>Monitor equipment health, identify abnormal behaviour and plan maintenance before downtime.</p></div>
+        <div><div className="eyebrow">CONTROL ROOM / LIVE OVERVIEW</div><h1>Plant Intelligence</h1><p>See equipment condition, detect abnormal signals, and turn maintenance data into action.</p></div>
         <div className="demo-tag">● SYNTHETIC DEMO DATA</div>
       </section>
 
@@ -128,7 +128,7 @@ function App() {
           <div className="orders">{orders.map(order=><div className="order" key={order.id}><div className="order-top"><b>{order.id}</b><Status status={order.priority}/></div><strong>{order.title}</strong><small>{order.asset_id} · {order.status}</small></div>)}</div>
         </div>
       </section>
-      <footer>FORGEWATCH · EDUCATIONAL PROTOTYPE <span>Model: Isolation Forest · Data: Synthetic simulation · Not for safety-critical use</span></footer>
+      <footer>FORGEWATCH / INDUSTRIAL INTELLIGENCE <span>Model: Isolation Forest · Data: Synthetic simulation · Not for safety-critical use</span></footer>
     </main>
   );
 }
